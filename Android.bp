@@ -102,7 +102,7 @@ java_defaults {
         enabled: false,
     },
     kotlincflags: ["-Xjvm-default=enable"],
-    certificate: "",
+    certificate: "platform",
 
     privileged: true,
     system_ext_specific: true,
@@ -125,7 +125,8 @@ android_app {
     ],
     required: [
         "default_permissions_com.android.wallpaper",
-        "privapp_whitelist_com.android.wallpaper"
+        "privapp_whitelist_com.android.wallpaper",
+        "ThemesStub"
     ],
 }
 
